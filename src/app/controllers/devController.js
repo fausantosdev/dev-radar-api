@@ -42,11 +42,14 @@ module.exports = {
         res.json(dev)
 
       }*/)
-    }/* else {
-      res.json({ response: false })
-    }*/
 
-    res.json(dev)
+      res.json(dev)
+
+    } else {
+      res.json({ response: false })
+    }
+
+
   },
 
   async show(req, res) {
