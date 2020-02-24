@@ -12,7 +12,7 @@ require('../config/mongoose')
 
 // Configs
 app.use(morgan('dev'))
-app.use(cors())
+app.use(cors({ origin: "https://devradarweb.herokuapp.com/" }))
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
